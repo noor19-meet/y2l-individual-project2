@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>My Game Style</title>
+</head>
+<body class='gifimage' style = "background-image: url({{ url_for('static', filename='game.gif') }})">
+<div class="title">
+
+<div class="logininfo" class="container-fluid">
+
+        <h1 class="font-weight-bold mov"> Sign up/Log in </h1>
+
+       		<form  class="btn btn-link" id = "sign_up_link" method = "POST" > 
+	        	<a href="/signup" class="btn btn-dark"> Sign up </a>
+	        	<a href="/logout" class="btn btn-dark"> Log out </a>
+
+
+
+	     
+	        </form>
+	        <form method="post">sign in
+				<input type="text" name="email" placeholder="email">
+				<input type="password" name="password" placeholder="password">
+				<input type="submit" name="submit" value="Sign In">
+			</form>
+	       
+        </div>
+
+
+
+	<h1>My Game Style</h1>
+<div class = "hello">
+	<p>Hello, {{session['name']}}</p>
+</div>
+	<div class = "relative">
+	 <a href="{{ url_for('cars') }}" class="badg badge-light" class='cars'> Cars </a>
+	 <a href="{{ url_for('fps') }}" class="badg badge-light" class='fps'> FPS </a>
+	 <a href="{{ url_for('mmorpg') }}" class="badg badge-light" class='mmorpg'> MMO-RPG </a>
+	 <a href="{{ url_for('moba') }}" class="badg badge-light" class='moba'> Moba </a>
+	</div>
+</div>
+</body>
+</html>

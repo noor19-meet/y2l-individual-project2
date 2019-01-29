@@ -1,0 +1,86 @@
+.title{
+	text-align: center;
+	color: red;
+}
+.relative{
+	position: relative ;
+	top: 300px;
+}
+
+.car{
+	background-repeat: no-repeat;
+  	background-size: 100%;
+  	color: red;
+}
+.gifimage{
+
+	background-repeat: no-repeat;
+  	background-size: 100%, 100%;
+
+}
+.moba{
+	background-repeat: no-repeat;
+  	background-size: 100%, 100%;
+  	color: red;
+}
+
+.fps{
+	background-repeat: no-repeat;
+  	background-size: 100%, 100%;
+  	color: red;
+}
+
+.mmorpg{
+	background-repeat: no-repeat;
+  	background-size: 100%, 100%;
+  	color: red;
+}
+
+.fps p {
+	color: yellow;
+}
+
+.moba p {
+	color: yellow;
+}
+
+.mmorpg p {
+	color: yellow;
+}
+
+.cars p {
+	color: yellow;
+}
+
+.top5 {
+	color: red;
+	text-align: 10px;
+}
+
+.top5c {
+	color: yellow;
+	background-color: none;
+
+}
+
+.logininfo { 
+    position: fixed;
+    left: 15%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+    
+  
+}
+
+.singup1 { 
+    position: relative;
+    top: 200px;
+    left: 500px;
+    width: 150px;
+    height: 100%;
+}
+
+.hello {
+	position: absolute;
+	right: 90px;
+}
